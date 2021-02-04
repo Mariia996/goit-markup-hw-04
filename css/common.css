@@ -18,6 +18,7 @@ body {
   --primary-white-color: #ffffff;
   --secondary-white-color: rgba(255, 255, 255, 0.6);
   --primary-bg-button: #f5f4fa;
+  --icons-color: #afb1b8;
 }
 
 /* основной цвет фона #FFFFFF */
@@ -75,11 +76,14 @@ p {
 /* ======== HEADER ======== */
 /* ======== Site-nav ======== */
 
+.header-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .container.header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-container {
@@ -162,6 +166,10 @@ p {
   margin-right: 50px;
 }
 
+.site-contacts-item.mail-with-margin::before {
+  content: '';
+}
+
 /* ======== END HEADER ======== */
 
 /* ======== FOOTER ======== */
@@ -171,7 +179,7 @@ p {
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 270px;
+  max-width: 270px;
 }
 
 .logo.logo-for-footer {
