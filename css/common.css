@@ -198,6 +198,10 @@ p {
   margin-right: 70px;
 }
 
+.footer-container.join-container {
+  padding-top: 68px;
+}
+
 .logo.logo-for-footer {
   display: flex;
   margin-bottom: 20px;
