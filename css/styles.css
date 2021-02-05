@@ -253,7 +253,8 @@
   fill: currentColor;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
   border-radius: 50%;
@@ -274,17 +275,31 @@
 }
 
 .client-item {
-  outline: 1px solid tomato;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.client-item:not(:nth-last-child(1)) {
+  margin-right: 30px;
 }
 
 .client-link {
   color: var(--icons-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 90px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .client-icon {

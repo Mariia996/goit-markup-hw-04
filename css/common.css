@@ -150,6 +150,7 @@ p {
   letter-spacing: 0.02em;
 
   display: flex;
+  align-items: center;
 }
 
 .link-contacts {
@@ -157,8 +158,8 @@ p {
   text-decoration: none;
 }
 
-.site-contacts .link-contacts:hover,
-.site-contacts .link-contacts:focus {
+.link-contacts:hover,
+.link-contacts:focus {
   color: var(--accent-color);
 }
 
@@ -168,17 +169,16 @@ p {
 
 .link-contacts {
   display: flex;
-  justify-content: baseline;
-}
-.icon-container {
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .contact-icon {
   fill: currentColor;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 /* ======== END HEADER ======== */
